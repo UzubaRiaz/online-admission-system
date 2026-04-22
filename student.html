@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Panel | Online Admission System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png">
+    <h2>ZIAUDDIN UNIVERSITY</h2>
+  </div>
+  <ul class="nav-links">
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="#myapps">My Applications</a></li>
+    <li><a href="#" id="logoutBtn">Logout</a></li>
+  </ul>
+</nav>
+
+<section id="studentHome">
+  <h1>STUDENT PANEL</h1>
+  <p class="hint">Welcome, <span id="studentName"></span></p>
+</section>
+
+<section id="myapps">
+  <h2>My Applications</h2>
+  <div class="applications-table-wrapper">
+    <table class="applications-table">
+      <thead>
+        <tr>
+          <th>Application ID</th>
+          <th>Department</th>
+          <th>Submitted On</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="myApplicationsBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<script src="app.storage.js"></script>
+<script src="app.auth.js"></script>
+<script src="student.js"></script>
+
+</body>
+</html>
